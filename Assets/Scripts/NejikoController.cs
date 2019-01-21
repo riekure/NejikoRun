@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class NejikoController : MonoBehaviour
 {
+    const int MinLane = -2;
+    const int MaxLane = 2;
+    const float LaneWidth = 1.0f;
+
     CharacterController controller;
     Animator animator;
 
     Vector3 moveDirection = Vector3.zero;
+    int targetLane;
 
     public float gravity;
     public float speedZ;
+    public float speedX;
     public float speedJump;
+    public float accelerationZ;
 
     // Start is called before the first frame update
     void Start()
@@ -24,28 +31,18 @@ public class NejikoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // 地上にいる場合のみ操作を行う
-        if (controller.isGrounded)
-        {
-            // Inputして検知して前に進める
-            if (Input.GetAxis("Vertical") > 0.0f)
-            {
-                moveDirection.z = Input.GetAxis("Vertical") * speedZ;
-            } else
-            {
-                moveDirection.z = 0;
-            }
-        }
+        // デバッグ用
+        if (Input.GetKeyDown("left")) MoveToLeft();
+        if (Input.GetKeyDown("right")) MoveToRight();
+        if (Input.GetKeyDown("space")) Jump();
 
-        // 方向転換
-        transform.Rotate(0, Input.GetAxis("Horizontal") * 3, 0);
+        // 徐々に加速しZ方向に常に前進させる
+        float acceleratedZ = moveDirection.z + (accelerationZ * Time.deltaTime);
+        moveDirection.z = Mathf.Clamp(acceleratedZ, 0, speedZ);
 
-        // ジャンプ
-        if (Input.GetButton("Jump"))
-        {
-            moveDirection.y = speedJump;
-            animator.SetTrigger("jump");
-        }
+        // X方向は目標のポジションまでの差分の割合で速度を計算
+        float ratioX = (targetLane * LaneWidth - transform.position.x) / LaneWidth;
+        moveDirection.x = ratioX * speedX;
 
         // 重力分の力を毎フレーム追加
         moveDirection.y -= gravity * Time.deltaTime;
@@ -54,13 +51,38 @@ public class NejikoController : MonoBehaviour
         Vector3 globalDirection = transform.TransformDirection(moveDirection);
         controller.Move(globalDirection * Time.deltaTime);
 
-        // 移動後着地していたらY方向の速度をリセットする
-        if (controller.isGrounded)
-        {
-            moveDirection.y = 0;
-        }
+        // 移動後接地してたらY方向の速度はリセットする
+        if (controller.isGrounded) moveDirection.y = 0;
 
         // 速度が0以上なら走っているフラグをtrueにする
         animator.SetBool("run", moveDirection.z > 0.0f);
+    }
+
+    // 左のレーンに移動を開始
+    public void MoveToLeft()
+    {
+        if (controller.isGrounded && targetLane > MinLane) {
+            targetLane--;
+        }
+    }
+
+    // 右のレーンに移動を開始
+    public void MoveToRight()
+    {
+        if (controller.isGrounded && targetLane < MaxLane)
+        {
+            targetLane++;
+        }
+    }
+
+    public void Jump()
+    {
+        if (controller.isGrounded)
+        {
+            moveDirection.y = speedJump;
+
+            // ジャンプトリガーを設定
+            animator.SetTrigger("jump");
+        }
     }
 }
