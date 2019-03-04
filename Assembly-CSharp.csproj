@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EnemyPoint.cs" />
     <Compile Include="Assets\Scripts\NejikoController.cs" />
     <Compile Include="Assets\Scripts\SimpleFollow.cs" />
     <Compile Include="Assets\Scripts\StageGenerator.cs" />
