@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     public NejikoController nejiko;
-    public TextAlignment scoreLabel;
+    public Text scoreLabel;
     public LifePanel lifePanel;
 
     // Start is called before the first frame update
@@ -20,6 +21,9 @@ public class GameController : MonoBehaviour
         // スコアラベルを更新
         int score = CalcScore();
         scoreLabel.text = "Score ： " + score + "m";
+
+        // ライフパネルの更新
+        lifePanel.UpdateLife(nejiko.Life());
     }
 
     int CalcScore()
