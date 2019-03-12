@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475272}
+  - component: {fileID: 1012939602888345838}
   m_Layer: 0
   m_Name: EnemyPoint 6
   m_TagString: Untagged
@@ -30,6 +31,19 @@ Transform:
   m_Father: {fileID: 444152}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1012939602888345838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425367af02a74ea42ab448213a86078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 126622, guid: b690dacf21cc94057ab7d152fa30ed9a, type: 3}
 --- !u!1 &125184
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,6 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 464584}
+  - component: {fileID: 3758947752893901382}
   m_Layer: 0
   m_Name: EnemyPoint 4
   m_TagString: Untagged
@@ -60,6 +75,19 @@ Transform:
   m_Father: {fileID: 444152}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3758947752893901382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425367af02a74ea42ab448213a86078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 126622, guid: b690dacf21cc94057ab7d152fa30ed9a, type: 3}
 --- !u!1 &128306
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,6 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461260}
+  - component: {fileID: 22383248394577776}
   m_Layer: 0
   m_Name: EnemyPoint
   m_TagString: Untagged
@@ -90,6 +119,19 @@ Transform:
   m_Father: {fileID: 444152}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &22383248394577776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425367af02a74ea42ab448213a86078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 126622, guid: b690dacf21cc94057ab7d152fa30ed9a, type: 3}
 --- !u!1 &128808
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 448700}
+  - component: {fileID: 6499746516639407980}
   m_Layer: 0
   m_Name: EnemyPoint 2
   m_TagString: Untagged
@@ -120,6 +163,19 @@ Transform:
   m_Father: {fileID: 444152}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6499746516639407980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425367af02a74ea42ab448213a86078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 126622, guid: b690dacf21cc94057ab7d152fa30ed9a, type: 3}
 --- !u!1 &137742
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422938}
+  - component: {fileID: 3112089583840122859}
   m_Layer: 0
   m_Name: EnemyPoint 5
   m_TagString: Untagged
@@ -279,6 +336,19 @@ Transform:
   m_Father: {fileID: 444152}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3112089583840122859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425367af02a74ea42ab448213a86078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 126622, guid: b690dacf21cc94057ab7d152fa30ed9a, type: 3}
 --- !u!1 &185634
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 470774}
+  - component: {fileID: 6921014052688506138}
   m_Layer: 0
   m_Name: EnemyPoint 1
   m_TagString: Untagged
@@ -309,6 +380,19 @@ Transform:
   m_Father: {fileID: 444152}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6921014052688506138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425367af02a74ea42ab448213a86078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 126622, guid: b690dacf21cc94057ab7d152fa30ed9a, type: 3}
 --- !u!1 &197596
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472632}
+  - component: {fileID: 962749674760321014}
   m_Layer: 0
   m_Name: EnemyPoint 3
   m_TagString: Untagged
@@ -339,3 +424,16 @@ Transform:
   m_Father: {fileID: 444152}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &962749674760321014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425367af02a74ea42ab448213a86078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 126622, guid: b690dacf21cc94057ab7d152fa30ed9a, type: 3}
