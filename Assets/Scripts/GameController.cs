@@ -45,6 +45,7 @@ public class GameController : MonoBehaviour
     void ReturnToTitle()
     {
         // タイトルシーンに切り替え
-        Application.LoadLevel("Title");
+        // Application.LoadLevel("Title");
+        SceneManager.LoadScene("Title");
     }
 }
